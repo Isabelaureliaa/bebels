@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS KOLABORASI PPKN, IPS DAN TIK tema 9.3 - Isabel 91 15</title>
+    <link rel="stylesheet" href="collab.css">
+</head>
+<body>
+        <img src="kerja sama.png" alt="Image Priview" class="judul-image"
+    
+        <div class="name-container">
+            <h2 class="center">Isabel Aurelia Tjakrarahardja 91 15</h2>
+        </div>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="PPKN 2.html">SDGS</a></li>
+            <li><a href="PPKN ">Kerja Sama</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown()">PPKN</a>
+                <ul class="dropdown-content">
+                    <li><a href="PPKN 1.html">KERJA SAMA BILATERAL INDONESIA DENGAN NEGARA EROPA - SPANYOL</a></li>
+                    <li><a href="PPKN 2.html">DAMPAK SUSTAINABLE DEVELOPMENT GOALS/SGDS TERHADAP KEMISKINAN INDONESIA</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content-container">
+        <p>Selamat datang di website kolaborasi Isabel dari kelas 91 nomor 15! Berikut ini adalah tugas kolaborasi antara mata pelajaran PPKN yang mencangkup topik Kerja Sama Bilateral Indonesia dengan Spanyol, Dampak SDGs terhadap Kemiskinan Indonesia, mata pelajaran IPS yang mencangkup topik ...., dan TIK dalam pembuatan website ini. Selamat membaca!</p>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('show'); 
+        }
+
+        window.onclick = function(event) {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content') && !event.target.matches('.dropdown-content a')) {
+                dropdownContent.classList.remove('show');
+            }
+        }
+    </script>
+
+</body>
+</html>

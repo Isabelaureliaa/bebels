@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.judul-image {
+    width: 1300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 5px solid white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg\ webbbbb.jpg');
+        animation: fadeIn 5s ease-in-out;
+        margin: 0;
+        padding: 0;
+    }
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 100%;
+    border: 3px solid white;
+}
+
+h1 {
+    color: steelblue;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: steelblue;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: wavy;
+    text-decoration-color: lightseagreen;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    animation: slideIn 5s ease-in-out;
+}
+
+h4{
+    text-align: center;
+    text-decoration: wavy;
+    text-decoration-color: lightseagreen;
+    color: orchid;
+    border-radius: 15px;
+    font-size: larger;
+    padding: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    animation: slideIn 5s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 15px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: steelblue;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #b0c4de;
+}
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 200px; 
+    padding: 10px 0;
+    display: none; 
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden; 
+    white-space: nowrap; 
+    max-width: 300px; 
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content {
+    right: auto; 
+    left: 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: steelblue;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #b0c4de;
+}
+
+#content-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.dropdown-content.show {
+    display: block;
+}
